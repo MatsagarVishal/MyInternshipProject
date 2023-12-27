@@ -1,0 +1,245 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+        background-color: #fbfcfc;
+    color: #0d0d0d;
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 1280px;
+}
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+::selection{
+    background-color: #fff990;
+    color: #ff0000;
+
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px;
+    text-align: center;
+}
+.header-text{
+    width: max-content;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    opacity: 1;
+    color: #ff0000;
+}
+.header-text2{
+    padding: 2px;
+    background-color: #0d0d0d;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+.header-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.header-text h5::after{
+    content: " ";
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+    background-color: #56e5e5;
+    width: 10%;
+    height: 2px;
+}
+.header-description{
+    margin-top: 5px;
+    font-weight:600 ;
+    opacity: 0.6;
+    text-align: center;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .section{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+.plan1,
+.plan2,
+.plan3{
+    
+    margin: 1rem;
+    width: 40%;
+}
+}
+
+.plan1,
+.plan2,
+.plan3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 30px;
+    border:1px solid #0d0d0d;
+    border-radius: .5rem
+}
+.plan1{
+    
+    box-shadow: -1px 1px 1px #000000;
+    border-top:    #19ffab inset .6rem;
+    transition: ease .4s;
+}
+.plan2{
+    background-image: linear-gradient(
+        136deg,
+        #19ffab 0%,
+        #19ffabca 30%,
+        #0077ffc8 70%,
+        #0077ff 100%
+    );
+    scale: 1.03;
+    box-shadow: 1px 4px 9px #000000;
+    color: #fff;
+    transition: ease .4s;
+}
+
+.plan3{
+
+    box-shadow: 1px 1px 1px #000000;
+    border-top:   #0077ff  outset .6rem;
+    transition: ease .4s;
+}
+.plan1:hover,
+.plan2:hover,
+.plan3:hover{
+    scale: 1.05;
+}
+
+
+
+
+.plan-upper{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 1px #0d0d0d;
+
+}
+.plan-text1,
+.plan-text3{
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+.plan-text1{
+    
+    text-decoration: underline;
+    text-decoration-thickness: .1rem;
+    text-underline-offset: .2rem;
+    
+}
+.plan-text2{
+    text-align: center;
+    opacity: 1;
+    color:#000000 ;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px #0d0d0d;
+}
+.plan2-text2,
+.plan2-text1,
+.plan2-text3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.plan2-text1{
+    text-decoration: underline;
+    text-decoration-thickness: .1rem;
+    text-underline-offset: .2rem;
+}
+.plan2-text2{
+    font-size: 3rem;
+}
+
+.plan-lower{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.lower-title{
+    font-weight:bold;
+    text-shadow: #000000 0px 1px 1px;
+    letter-spacing: .1rem;
+}
+.plan-lower ul{
+    font-size: .8rem;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-weight: 600;
+    opacity: .8;
+    list-style-type: circle;
+}
+
+.plan1 .btn,
+.plan3 .btn{
+    background-color: #00f379;
+    color: aliceblue;
+    padding: 0.2rem;
+    margin:1rem 0rem 0rem 0rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    box-shadow: 1px 4px 9px #000000;
+    border-radius: .3rem;
+}
+.plan3 .btn{
+    background-color: #008ef3;
+}
+.plan2 .btn{
+    background-color: #ffffff;
+    color: rgb(0, 136, 255);
+    padding: 0.2rem;
+    margin:1rem 0rem 0rem 0rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    box-shadow: 1px 4px 9px #000000;
+    text-shadow: 1px 0px 0px #000000;
+    border-radius: .3rem;
+
+}
+.btn{
+    transition: ease .3s;
+}
+.btn:hover{
+    box-shadow: 0px 0px 9px #000000;
+    
+}
+.btn:active{
+    box-shadow: 0px 0px 0px #000000;
+    scale: .99;
+
+}
